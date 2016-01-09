@@ -11,7 +11,7 @@
       daysText: 'days ',
       hourText: 'hour ',
       hours2Text: 'hours ',
-      hoursText: 'hours ',
+      hoursText: '',
       minutesText: ':',
       secondsText: '',
       textAfterCount: '---',
@@ -63,7 +63,7 @@
       if (_this.opts.addClass) {
         box.addClass(_this.opts.addClass);
       }
-      //boxHoursText.html(_this.opts.hoursText);
+      boxHoursText.html(_this.opts.hoursText);
       boxMinText.html(_this.opts.minutesText);
       boxSecText.html(_this.opts.secondsText);
       box.append(boxDays).append(boxDaysText).append(boxHours).append(boxHoursText).append(boxMin).append(boxMinText).append(boxSec).append(boxSecText);
