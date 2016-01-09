@@ -10,7 +10,7 @@
       days2Text: 'days ',
       daysText: 'days ',
       hourText: 'hour ',
-      hours2Text: 'hours ',
+      hours2Text: '',
       hoursText: '',
       minutesText: ':',
       secondsText: '',
