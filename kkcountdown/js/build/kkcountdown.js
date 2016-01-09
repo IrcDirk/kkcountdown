@@ -18,6 +18,7 @@
       oneDayClass: false,
       displayDays: true,
       displayZeroDays: true,
+      displayHours: true,
       addClass: false,
       callback: false,
       warnSeconds: 60,
@@ -140,8 +141,10 @@
           obj.find('.' + _this.opts.boxDaysTextClass).html(this.formatText(days, 'day'));
         }
       }
-      obj.find('.' + _this.opts.boxHoursClass).html(hours);
-      obj.find('.' + _this.opts.boxHoursTextClass).html(this.formatText(hours, 'hour'));
+      if (_this.opts.displayHours) {
+          obj.find('.' + _this.opts.boxHoursClass).html(hours);
+          obj.find('.' + _this.opts.boxHoursTextClass).html(this.formatText(hours, 'hour'));
+      }
       obj.find('.' + _this.opts.boxMinClass).html(minutes);
       return obj.find('.' + _this.opts.boxSecClass).html(seconds);
     };
